@@ -1,20 +1,55 @@
 
-
-.cabecera{
-    background-color: rgb(167, 167, 204);
-    padding: 1.5rem 0;  
-    text-align: center;
+html{
+    background-color: gray;
 }
+
+.cabecera {
+    text-align: center;
+    position: absolute;
+  top: 35%;
+  left: 55%; 
+  transform: translate(-50%, -50%) rotate(-19deg);
+
+    
+}
+
+
+.contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    
+
+   
+}
+
+
+
+  
+
 
 
 .lacasa{
-   
+   text-align: center;
     font-family: 'Great Vibes', cursive;
     margin: 0 auto;
     font-size: 1.5rem;
+    animation: rotate-animation 2s ease-in-out;
     display: inline-block;
-    position: relative;
+    position: relative; 
 }
+    @keyframes rotate-animation {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(6deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    
 
 span{
     font-size: 2.5rem;
@@ -29,7 +64,7 @@ span{
     height: 5px;
     bottom: 0;
     left: 0;
-    background-color: pink;
+    background-color: rgb(154, 110, 156);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.6s ease-out;
@@ -53,11 +88,11 @@ span{
 
     content: " ";
     position: absolute;
-    width: 50%;
+    width:20%;
     height: 5px;
     bottom: 0 ;
-    left: 0;
-    background-color: rgb(232, 10, 47);
+    left: 582px;
+    background-color: rgb(209, 130, 213);
     transform: scaleY(0);
     transform-origin: bottom left;
     transition: transform 0.6s ease-out;
@@ -83,20 +118,23 @@ span{
     justify-content: space-evenly;
 }
 
-.navegacion2 a{
+.navegacion2 {
     
     text-decoration: none; 
     text-transform: uppercase; 
-    background-color: rgb(108, 92, 92); 
+     
     padding: 0.5rem ;  
     margin-top: 1rem;
 }
 
 
-.navegacion2:hover a{
-    background-color: rgb(125, 177, 133);
+
+    
+
+
+.inicio:hover{
+    background-color: aqua;
+    font-size: 1.5rem;
     color: yellow;
-} 
-
-
+}
 
